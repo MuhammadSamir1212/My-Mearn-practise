@@ -1,0 +1,44 @@
+.btn-controll {
+  text-align: center;
+}
+.pop-btn {
+  position: relative;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  padding: 1em 4em;
+  margin: 2em 0;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0.5em 0.4em rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.pop-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: red;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.pop-btn:hover::before {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}

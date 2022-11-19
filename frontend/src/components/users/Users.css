@@ -1,0 +1,48 @@
+.user-container {
+  width: 100%;
+  padding: 0 9%;
+}
+
+.user-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid blue;
+  padding: 1em 0;
+  margin: 1em 0;
+}
+
+.users-items {
+  flex: 1;
+  text-align: center;
+  color: blue;
+}
+
+.btn-edite {
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: green;
+  padding: 1.5em 2em;
+  margin-right: 1em;
+  border-radius: 10px;
+}
+.btn-delete {
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: red;
+  padding: 1.5em 2em;
+  border-radius: 10px;
+}
+
+.users-btn {
+  flex: 1;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  color: blue;
+}
